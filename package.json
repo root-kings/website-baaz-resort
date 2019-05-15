@@ -1,24 +1,33 @@
 {
-  "name": "website-baaz-resort",
-  "version": "1.0.0",
-  "description": "website for baaz jungle resort",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/root-kings/website-baaz-resort.git"
-  },
-  "author": "Krushn Dayshmookh <krushndayshmookh@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/root-kings/website-baaz-resort/issues"
-  },
-  "homepage": "https://github.com/root-kings/website-baaz-resort#readme",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.16.4",
-    "pug": "^2.0.3"
-  }
+	"name": "website-baaz-resort",
+	"version": "1.0.0",
+	"description": "website for baaz jungle resort",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index.js",
+		"dev": "concurrently --kill-others \"nodemon -r dotenv/config index.js\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/root-kings/website-baaz-resort.git"
+	},
+	"author": "Krushn Dayshmookh <krushndayshmookh@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/root-kings/website-baaz-resort/issues"
+	},
+	"homepage": "https://github.com/root-kings/website-baaz-resort#readme",
+	"dependencies": {
+		"body-parser": "^1.19.0",
+		"cors": "^2.8.5",
+		"express": "^4.16.4",
+		"morgan": "^1.9.1",
+		"pug": "^2.0.3",
+		"serve-favicon": "^2.5.0"
+	},
+	"devDependencies": {
+		"concurrently": "^4.1.0",
+		"dotenv": "^6.2.0"
+	}
 }
