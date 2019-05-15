@@ -1,0 +1,19 @@
+{
+  "name": "website-baaz-resort",
+  "version": "1.0.0",
+  "description": "website for baaz jungle resort",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/root-kings/website-baaz-resort.git"
+  },
+  "author": "Krushn Dayshmookh <krushndayshmookh@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/root-kings/website-baaz-resort/issues"
+  },
+  "homepage": "https://github.com/root-kings/website-baaz-resort#readme"
+}
