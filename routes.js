@@ -1,23 +1,18 @@
-const express = require('express')
-const router = express.Router()
+/* eslint-disable new-cap */
+/* eslint-disable capitalized-comments */
+let router = require("express").Router();
 
-router.get('/', function(req, res) {
-	res.render('index')
-})
+router.get("/", (req, res) => {
+  res.render("index", { name: "Home | GAGS" });
+});
 
-router.get('/contact', function(req, res) {
-	res.render('contact')
-})
+router.get("/contact", (req, res) => {
+  res.render("contact", { name: "Contact | GAGS" });
+});
 
-router.get('/about', function(req, res) {
-	res.render('about')
-})
+router.get("/about", (req, res) => {
+  res.render("about", { name: "About Us | GAGS" });
+});
+// Controllers -----
 
-// Admin routes -----
-
-router.get('/login', function(req, res) {
-	res.render('login')
-})
-
-//export this router to use in our index.js
-module.exports = router
+module.exports = router;
